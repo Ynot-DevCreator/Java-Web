@@ -7,11 +7,18 @@
 </head>
 <body>
     <script>
-        const jantar = Number(prompt("Digite o Valor do Jantar: "))
-
-        const pgarcom = (15/100) * jantar
-
-        alert("A parte do garçom é de: "+pgarcom+"R$")
+        alert("Restaurante Self Service - Valor do Prato: 25.00R$");
+        const pes = Number(prompt("Quantas pessoas vão comer hoje no restaurante?"));
+        const refri = Number(prompt("Vai querer Refrigerante? (1-Sim 2-Não)"));
+        const prato = 25
+        let conta = 0;
+        conta += (pes*prato);
+        if (refri === 1) {
+            conta += 10;
+        }
+        const taxa = (15/100)*conta;
+        alert("Valor da Conta Total: "+conta+"R$")
+        alert("Valor da Conta Total(Com a taxa do garçom): "+(conta+taxa)+"R$")
     </script>
 </body>
 </html>
