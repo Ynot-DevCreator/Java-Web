@@ -1,23 +1,19 @@
 <!DOCTYPE html> <!--Define o documento-->
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <form>
         <!--Entrada de dados-->
-        <label id="usuario">Login</label><br><br>
+        <label id="usuario">Exercicio</label><br><br>
         <input type="number" id="inId" placeholder="ID" disabled><br><br>
-        <input type="text" id="inNome" placeholder="Nome">
+        <input type="text" id="inNome" placeholder="Digite o Exercicio">
+        <input type="submit" value="Mostrar">
     </form>
-    <script>
-        alert("JFono Beta 1.0")
-            const nome = document.getElementById("inNome");
-            console.log(`Olá ${nome} Seja bem vindo ao JFONO beta 1.0`)
-            console.log(nome);
-    </script>
+    <script src="js/exercicio.js"></script>
 </body>
 </html>
